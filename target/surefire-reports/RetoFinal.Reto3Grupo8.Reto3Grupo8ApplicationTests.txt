@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: RetoFinal.Reto3Grupo8.Reto3Grupo8ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 19.994 s <<< FAILURE! - in RetoFinal.Reto3Grupo8.Reto3Grupo8ApplicationTests
+contextLoads  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.DuplicateMappingException: Table [moto] contains physical column name [category_id] referred to by multiple logical column names: [categoryId], [category_id]
+Caused by: org.hibernate.DuplicateMappingException: Table [moto] contains physical column name [category_id] referred to by multiple logical column names: [categoryId], [category_id]
+
